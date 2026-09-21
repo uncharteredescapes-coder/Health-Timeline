@@ -136,10 +136,10 @@ fun ExtractionScreen(
                     Text(text = "📄", fontSize = 32.sp)
                     Spacer(modifier = Modifier.height(12.dp))
                     Text(
-                        text = t("No structured results detected", "কোনো তথ্য শনাক্ত করা যায়নি"),
-                        fontSize = 16.sp,
+                        text = if (!extractionStatus.isNullOrBlank()) extractionStatus!! else t("No structured results detected", "কোনো তথ্য শনাক্ত করা যায়নি"),
+                        fontSize = 15.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Ink,
+                        color = if (extractionStatus?.contains("rejected", ignoreCase = true) == true) Accent else Ink,
                         fontFamily = BodyFontFamily
                     )
                     Spacer(modifier = Modifier.height(6.dp))
@@ -248,6 +248,16 @@ fun ExtractionScreen(
                                 )
                             }
 
+                            if (!lab.sourceDocumentId.isNullOrBlank()) {
+                                Text(
+                                    text = t("Source Doc: ${lab.sourceDocumentId.take(8)}...", "উৎস ডকুমেন্ট: ${lab.sourceDocumentId.take(8)}..."),
+                                    fontSize = 11.sp,
+                                    color = Primary,
+                                    fontFamily = BodyFontFamily,
+                                    modifier = Modifier.padding(top = 2.dp)
+                                )
+                            }
+
                             Row(
                                 modifier = Modifier
                                     .fillMaxWidth()
@@ -255,14 +265,16 @@ fun ExtractionScreen(
                                 horizontalArrangement = Arrangement.SpaceBetween,
                                 verticalAlignment = Alignment.CenterVertically
                             ) {
+                                val isLowConf = lab.confidence < 0.7
                                 Text(
-                                    text = t("Confidence: ${(lab.confidence * 100).toInt()}%", "নির্ভুলতা: ${(lab.confidence * 100).toInt()}%"),
+                                    text = t("Confidence: ${(lab.confidence * 100).toInt()}%", "নির্ভুলতা: ${(lab.confidence * 100).toInt()}%") + (if (isLowConf) " ⚠️" else ""),
                                     fontSize = 11.sp,
-                                    color = InkSoft,
+                                    color = if (isLowConf) Accent else InkSoft,
+                                    fontWeight = if (isLowConf) FontWeight.Bold else FontWeight.Normal,
                                     fontFamily = BodyFontFamily
                                 )
                                 Text(
-                                    text = t("Tap to edit", "সম্পাদনা করতে চাপুন"),
+                                    text = t("Tap to edit / verify", "সম্পাদনা ও যাচাই করতে চাপুন"),
                                     fontSize = 12.sp,
                                     color = Primary,
                                     fontWeight = FontWeight.SemiBold,
