@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Health Timeline</string>
+    <string name="nav_home">Timeline</string>
+    <string name="nav_medications">Meds</string>
+    <string name="nav_scan">Scan</string>
+    <string name="nav_summary">Summary</string>
+    <string name="nav_profile">Profile</string>
+
+    <string name="biometric_title">Unlock Health Timeline</string>
+    <string name="biometric_subtitle">Confirm identity to access encrypted medical records</string>
+    <string name="biometric_unlock">Unlock with Biometrics</string>
+    <string name="biometric_failed">Authentication required to view sensitive health data</string>
+
+    <string name="status_normal">NORMAL</string>
+    <string name="status_low">LOW</string>
+    <string name="status_high">HIGH</string>
+    <string name="status_critical">CRITICAL</string>
+    <string name="verified_record">Verified</string>
+    <string name="unverified_record">Unverified</string>
+
+    <string name="empty_timeline_title">No Medical Records Yet</string>
+    <string name="empty_timeline_desc">Tap the scan icon below to scan or upload your lab reports, prescriptions, or discharge summaries securely.</string>
+
+    <string name="scan_title">Scan Medical Record</string>
+    <string name="scan_take_photo">Take Document Photo</string>
+    <string name="scan_select_gallery">Choose from Gallery</string>
+    <string name="scan_instruction">Position the lab report flat under good lighting for clear text recognition.</string>
+
+    <string name="review_title">Clinical Extraction Review</string>
+    <string name="review_subtitle">Verify extracted metrics before saving to your encrypted health timeline.</string>
+    <string name="btn_save_all">Approve &amp; Save to Records</string>
+    <string name="btn_discard">Discard</string>
+
+    <string name="medications_title">Medications</string>
+    <string name="adherence_label">30-Day Adherence</string>
+    <string name="log_dose">Log Dose</string>
+    <string name="dose_taken">Taken</string>
+    <string name="dose_missed">Missed</string>
+
+    <string name="summary_title">Clinical Visit Summary</string>
+    <string name="summary_subtitle">AI-grounded longitudinal health synthesis for your next physician consultation.</string>
+    <string name="btn_export_pdf">Export Clinical PDF</string>
+    <string name="grounding_notice">This summary is generated strictly from your verified local records and requires clinician review.</string>
+
+    <string name="profile_title">Patient Profile &amp; Privacy</string>
+    <string name="privacy_local_storage">All medical documents and database records are stored in private encrypted on-device storage.</string>
+    <string name="danger_wipe_title">Delete All Health Data</string>
+    <string name="danger_wipe_desc">Permanently erase all local records, documents, and extraction history from this device.</string>
+</resources>

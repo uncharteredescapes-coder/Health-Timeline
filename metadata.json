@@ -1,0 +1,8 @@
+{
+  "name": "Health Timeline",
+  "description": "A privacy-first, longitudinal personal health record application with structured clinical extraction, provenance, and deterministic analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

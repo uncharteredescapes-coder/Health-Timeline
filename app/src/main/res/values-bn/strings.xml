@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Health Timeline</string>
+    <string name="nav_home">টাইমলাইন</string>
+    <string name="nav_medications">ওষুধ</string>
+    <string name="nav_scan">স্ক্যান</string>
+    <string name="nav_summary">সারসংক্ষেপ</string>
+    <string name="nav_profile">প্রোফাইল</string>
+
+    <string name="biometric_title">হেলথ টাইমলাইন আনলক করুন</string>
+    <string name="biometric_subtitle">এনক্রিপ্ট করা স্বাস্থ্য রেকর্ড দেখতে বায়োমেট্রিক নিশ্চিত করুন</string>
+    <string name="biometric_unlock">বায়োমেট্রিক দিয়ে খুলুন</string>
+    <string name="biometric_failed">স্বাস্থ্য তথ্য দেখতে প্রমাণীকরণ প্রয়োজন</string>
+
+    <string name="status_normal">স্বাভাবিক</string>
+    <string name="status_low">কম</string>
+    <string name="status_high">বেশি</string>
+    <string name="status_critical">ঝুঁকিপূর্ণ</string>
+    <string name="verified_record">যাচাইকৃত</string>
+    <string name="unverified_record">অযাচাইকৃত</string>
+
+    <string name="empty_timeline_title">কোনো স্বাস্থ্য রেকর্ড নেই</string>
+    <string name="empty_timeline_desc">আপনার প্রেসক্রিপশন বা ল্যাব রিপোর্ট স্ক্যান করতে নিচের স্ক্যান আইকনে ট্যাপ করুন।</string>
+
+    <string name="scan_title">মেডিকেল রেকর্ড স্ক্যান করুন</string>
+    <string name="scan_take_photo">ডকুমেন্টের ছবি তুলুন</string>
+    <string name="scan_select_gallery">গ্যালারি থেকে নির্বাচন করুন</string>
+    <string name="scan_instruction">পরিষ্কার ফলাফলের জন্য রিপোর্টটি সমান জায়গায় রেখে ভালো আলোতে ছবি তুলুন।</string>
+
+    <string name="review_title">তথ্য যাচাইকরণ</string>
+    <string name="review_subtitle">রেকর্ডে সংরক্ষণ করার আগে তথ্যের সঠিকতা যাচাই করুন।</string>
+    <string name="btn_save_all">অনুমোদন ও সংরক্ষণ করুন</string>
+    <string name="btn_discard">বাতিল করুন</string>
+
+    <string name="medications_title">ওষুধের তালিকা</string>
+    <string name="adherence_label">৩০ দিনের ওষুধ গ্রহণের হার</string>
+    <string name="log_dose">ওষুধ লগ করুন</string>
+    <string name="dose_taken">গ্রহণ করা হয়েছে</string>
+    <string name="dose_missed">বাদ পড়েছে</string>
+
+    <string name="summary_title">ক্লিনিক্যাল ভিজিট সামারি</string>
+    <string name="summary_subtitle">পরবর্তী ডাক্তারের সাক্ষাতের জন্য এআই-ভিত্তিক তথ্য সারসংক্ষেপ।</string>
+    <string name="btn_export_pdf">ক্লিনিক্যাল পিডিএফ ডাউনলোড করুন</string>
+    <string name="grounding_notice">এই সারসংক্ষেপটি আপনার সংরক্ষিত স্বাস্থ্য রেকর্ড থেকে প্রস্তুত করা হয়েছে এবং এটি চিকিৎসকের পরামর্শের বিকল্প নয়।</string>
+
+    <string name="profile_title">প্রোফাইল ও গোপনীয়তা</string>
+    <string name="privacy_local_storage">সকল মেডিকেল রিপোর্ট ও ডাটাবেস সম্পূর্ণভাবে আপনার ডিভাইসের সুরক্ষিত মেমরিতে সংরক্ষিত থাকে।</string>
+    <string name="danger_wipe_title">সকল তথ্য মুছে ফেলুন</string>
+    <string name="danger_wipe_desc">এই ডিভাইস থেকে সমস্ত ল্যাব রিপোর্ট, প্রেসক্রিপশন ও তথ্য স্থায়ীভাবে মুছে ফেলুন।</string>
+</resources>
